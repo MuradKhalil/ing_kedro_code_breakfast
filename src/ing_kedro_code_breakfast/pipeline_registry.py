@@ -30,6 +30,8 @@
 from typing import Dict
 
 from kedro.pipeline import Pipeline
+from ing_kedro_code_breakfast.pipelines import data_processing as dp
+from ing_kedro_code_breakfast.pipelines import data_science as ds
 
 
 def register_pipelines() -> Dict[str, Pipeline]:
@@ -38,4 +40,11 @@ def register_pipelines() -> Dict[str, Pipeline]:
     Returns:
         A mapping from a pipeline name to a ``Pipeline`` object.
     """
-    return {"__default__": Pipeline([])}
+    data_processing_pipeline = dp.create_pipeline()
+    data_science_pipeline = ds.create_pipeline()
+
+    return {
+        "__default__": data_processing_pipeline + data_science_pipeline,
+        "dp": data_processing_pipeline,
+        "ds": data_science_pipeline,
+    }
