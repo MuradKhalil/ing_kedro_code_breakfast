@@ -7,13 +7,13 @@
 
 1. Fork and clone this github repository: https://github.com/MuradKhalil/ing_kedro_code_breakfast
 2. Navigate to the cloned repo: *$ cd ing_kedro_code_breakfast*
-3. Build a docker container: *$ docker build -t ing_kedro_code_breakfast:v1 .*
-4. Spin up the container: *$ docker run -p=4141:4141 -it ing_kedro_code_breakfast:v1*
+3. Build a docker image: *$ docker build -t ing_kedro_code_breakfast:v1 .*
+4. Spin up a container: *$ docker run -p=4141:4141 -it ing_kedro_code_breakfast:v1*
 5. Navigate to the kedro project folder inside the container: *$ cd kedro_tutorial*
 
 
 ## Tasks:
-- Data
+### Data
 1. Run *$ kedro run --node=preprocess_companies_node*
 2. Run *$ kedro run --node=preprocess_shuttles_node*. This should give an error
 3. Open up conf/base/catalog.yml and register the data/01_raw/shuttles.csv file
