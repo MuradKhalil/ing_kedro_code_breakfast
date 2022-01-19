@@ -38,6 +38,6 @@
 ### Data science pipeline
 8. Open up *src/ing_kedro_code_breakfast/pipelines/data_science/pipeline.py* and complete the code
     - Pass the newly created csv file as one of the inputs to the split data node
-9. *train_model_node* outputs a model, make it persist by registering in *catalog.yml*. Specify the path to be data/06_models
+9. *train_model_node* outputs a model, make it persist by registering in *catalog.yml*. Specify the path to be *data/06_models*
 10. Run all the pipelines: `$ kedro run`
 11. Visualize the pipelines: `$ kedro viz --host=0.0.0.0`
