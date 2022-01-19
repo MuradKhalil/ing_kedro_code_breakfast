@@ -6,7 +6,13 @@ def create_pipeline(**kwargs):
         [
             node(
                 func=split_data,
-                inputs=["model_input_table", "parameters"],
+                inputs=[
+                # Task 8:
+                ####
+                # your code here #
+                ####
+                    "parameters"
+                    ],
                 outputs=["X_train", "X_test", "y_train", "y_test"],
                 name="split_data_node",
             ),

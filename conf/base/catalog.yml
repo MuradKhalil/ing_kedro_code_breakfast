@@ -11,25 +11,17 @@ reviews:
   type: pandas.CSVDataSet
   filepath: data/01_raw/reviews.csv
 
-shuttles:
-  type: pandas.CSVDataSet
-  filepath: data/01_raw/shuttles.csv
-  load_args:
-    sep: ";"
+# Task 3: Register shuttles.csv. Specify ";" as the delimiter to use. More info: https://kedro.readthedocs.io/en/stable/kedro.extras.datasets.pandas.CSVDataSet.html
+####
+# your code here #  
+####
 
-preprocessed_companies:
-  type: pandas.CSVDataSet
-  filepath: data/02_intermediate/preprocessed_companies.csv
+# Task 6: Register the output of the new node from data_processing pipeline
+####
+# your code here #
+####
 
-preprocessed_shuttles:
-  type: pandas.CSVDataSet
-  filepath: data/02_intermediate/preprocessed_shuttles.csv
-
-model_input_table:
-  type: pandas.CSVDataSet
-  filepath: data/03_primary/model_input_table.csv
-
-regressor:
-  type: pickle.PickleDataSet
-  filepath: data/06_models/regressor.pickle
-  versioned: true
+# Task 9: Register the regressor here. More info: https://kedro.readthedocs.io/en/latest/kedro.extras.datasets.pickle.PickleDataSet.html
+####
+# your code here #
+####
