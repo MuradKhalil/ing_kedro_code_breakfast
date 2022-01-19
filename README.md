@@ -10,13 +10,18 @@
 3. Build a docker container: *$ docker build -t ing_kedro_code_breakfast:v1 .*
 4. Spin up the container and start a bash session: *$ docker run -p=4141:4141 -it ing_kedro_code_breakfast:v1  /bin/bash*
 5. Navigate to the kedro project folder inside the container: *$ cd kedro_tutorial*
+6. Install nano by running following two commands:
+    - *$ apt-get update*
+    - *$ apt-get install nano*
 
 ## Tasks:
 - Data
 1. Run *$ kedro run --node=preprocess_companies_node*
 2. Run *$ kedro run --node=preprocess_shuttles_node*. This should give an error
 3. Open up conf/base/catalog.yml and register the data/01_raw/shuttles.csv file
+    - You can open the file by running *$ nano conf/base/catalog.yml*
     - Specify ";" as the delimeter
+    - Save by pressing ^s and exit via ^x
 4. Repeat task 2
 
 - Data processing pipeline
