@@ -22,7 +22,7 @@
     - Save by pressing ^s and exit via ^x
 4. Repeat task 2
 
-- Data processing pipeline
+### Data processing pipeline
 5. Open up src/ing_kedro_code_breakfast/pipelines/data_processing/pipeline.py and add one more node to the pipeline
     - Node takes the create_model_input_table function as the func argument
     - Node takes 3 input files: outputs of the previous two nodes and the reviews.csv files
@@ -31,7 +31,7 @@
 6. Register the output of the newly added node as a csv file in catalog.yml. Store the csv file in data/03_primary
 7. Run the data processing pipeline: *$ kedro run --pipeline=dp*. You should see the output of the newly added node stored in data/03_primary
 
-- Data science pipeline
+### Data science pipeline
 8. Open up src/ing_kedro_code_breakfast/pipelines/data_science/pipeline.py and complete the code
     - Pass the newly created csv file as one of the inputs to the split data node
 9. train_model_node outputs a regressor, make it persist by registering in catalog.yml. Specify the path to be data/06_models
