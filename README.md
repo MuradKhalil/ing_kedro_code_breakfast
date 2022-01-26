@@ -2,11 +2,11 @@
 
 ## Overview
 Kedro is a python framework that makes it easy to build data pipelines and run those via terminal. Some concepts important to this session:
-*conf/base/catalog.yml* - a yaml file where data (raw input, processed data, models, etc.) is registered
-*src/ing_kedro_code_breakfast/pipelines* - a directory where pipelines are created. Each pipeline will have its own subdirectory here
-*src/ing_kedro_code_breakfast/pipelines/data_processing/nodes.py* - each pipeline will have a nodes.py file that contains different functions to be applied on the data
-*src/ing_kedro_code_breakfast/pipelines/data_processing/pipeline.py* - functions from the nodes.py file are used in pipeline.py to construct a pipeline
-*src/ing_kedro_code_breakfast/pipeline_registry.py* - once pipelines are created, they need to be registered here. Once registered they can be executed via terminal
+    - *conf/base/catalog.yml* - a yaml file where data (raw input, processed data, models, etc.) is registered
+    - *src/ing_kedro_code_breakfast/pipelines* - a directory where pipelines are created. Each pipeline will have its own subdirectory here
+    - *src/ing_kedro_code_breakfast/pipelines/data_processing/nodes.py* - each pipeline will have a nodes.py file that contains different functions to be applied on the data
+    - *src/ing_kedro_code_breakfast/pipelines/data_processing/pipeline.py* - functions from the nodes.py file are used in pipeline.py to construct a pipeline
+    - *src/ing_kedro_code_breakfast/pipeline_registry.py* - once pipelines are created, they need to be registered here. Once registered they can be executed via terminal
 
 
 ## Prerequisites
