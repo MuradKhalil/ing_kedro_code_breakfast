@@ -6,27 +6,13 @@ def create_pipeline(**kwargs):
         [
             node(
                 func=split_data,
-                inputs=[
-                # Task 8:
-                ####
-                # your code here #
-                ####
-                    "parameters"
-                    ],
+                inputs=['model_input_table', "parameters"],
                 outputs=["X_train", "X_test", "y_train", "y_test"],
                 name="split_data_node",
             ),
-            node(
-                func=train_model,
-                inputs=["X_train", "y_train"],
-                outputs="regressor",
-                name="train_model_node",
-            ),
-            node(
-                func=evaluate_model,
-                inputs=["regressor", "X_test", "y_test"],
-                outputs=None,
-                name="evaluate_model_node",
-            ),
+            # Task 6: add 2 more nodes. One for training a model and another for evaluating it
+            ####
+            # your code here
+            ####
         ]
     )
