@@ -43,5 +43,5 @@ Kedro is a python framework that makes it easy to build data pipelines and run t
     - More info on how to regsiter a model: https://kedro.readthedocs.io/en/latest/kedro.extras.datasets.pickle.PickleDataSet.html
 8. Register the data_science pipeline in *src/ing_kedro_code_breakfast/pipeline_registry.py*
 9. Run all the pipelines: `$ kedro run`
-10. Inspect contents of the *data/06_models* folder (you should be able to see the model saved among the data files)
+10. Inspect contents of the *data/06_models* folder (you should be able to see the model saved there)
 11. Visualize the extended data pipeline: `$ kedro viz --host=0.0.0.0`
