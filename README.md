@@ -32,7 +32,7 @@ Kedro is a python framework that makes it easy to build data pipelines and run t
 3. Run `$ kedro run` and inspect contents of the *data/03_primary* folder
 4. Register the output of the final node of the data_processing pipeline as a csv file in *catalog.yml*. Store the csv file in *data/03_primary*
     - You can open the file by running `$ nano conf/base/catalog.yml`
-    - Save by pressing *^s* and exit via *^x*
+    - Save by pressing `^s` and exit via `^x`
 5. Repeat task 3 (you should see *model_input_table.csv* among the data files)
 
 ### Data science pipeline
