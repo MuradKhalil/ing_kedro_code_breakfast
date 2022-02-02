@@ -17,19 +17,12 @@ shuttles:
   load_args:
     sep: ";"
 
-preprocessed_companies:
-  type: pandas.CSVDataSet
-  filepath: data/02_intermediate/preprocessed_companies.csv
+# Task 4: Register the output of the create_model_input_table_node from the data_processing_pipeline
+####
+# your code here #
+####
 
-preprocessed_shuttles:
-  type: pandas.CSVDataSet
-  filepath: data/02_intermediate/preprocessed_shuttles.csv
-
-model_input_table:
-  type: pandas.CSVDataSet
-  filepath: data/03_primary/model_input_table.csv
-
-regressor:
-  type: pickle.PickleDataSet
-  filepath: data/06_models/regressor.pickle
-  versioned: true
+# Task 7: Register the regressor here.
+####
+# your code here #
+####

@@ -5,5 +5,7 @@ RUN pip install -r requirements.txt
 RUN mkdir /kedro_tutorial
 COPY . /kedro_tutorial
 
+RUN apt-get update && \
+    apt-get install -y nano
 
-
+CMD ["bash"]
