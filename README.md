@@ -27,7 +27,7 @@ Kedro is a python framework that makes it easy to build data pipelines and run t
 
 ## Tasks:
 ### Data processing pipeline
-1. Run `$ kedro viz --host=0.0.0.0` and inspect the data pipeline. Shut down the app by pressing *ctrl C*.
+1. Run `$ kedro viz --host=0.0.0.0`. This will start a web app with interactive visualization of the pipeline. Inspect the data pipeline. Once finished, shut down the app by pressing *ctrl C*.
 2. Inspect *src/ing_kedro_code_breakfast/pipelines/data_processing/pipeline.py* and *conf/base/catalog.yml* files
 3. Run `$ kedro run` and inspect contents of the *data/03_primary* folder
 4. Register the output of the final node of the data_processing pipeline as a csv file in *catalog.yml*. Store the csv file in *data/03_primary*

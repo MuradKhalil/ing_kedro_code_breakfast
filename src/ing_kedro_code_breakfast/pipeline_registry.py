@@ -41,8 +41,19 @@ def register_pipelines() -> Dict[str, Pipeline]:
         A mapping from a pipeline name to a ``Pipeline`` object.
     """
     data_processing_pipeline = dp.create_pipeline()
+    # Task 8: initialize the data science pipeline here
+    ####
+    # your code here
+    ####
 
     return {
+        # Task 8: __default__ should return 2 pipelines. Add the initialized data science pipeline
+        # to the data processing pipeline this way. You can add those with the "+" sign
         "__default__": data_processing_pipeline,
+
+        # Task 8: add the initialized data science pipeline here
         "dp": data_processing_pipeline,
+        ####
+        # your code here
+        ####
     }
